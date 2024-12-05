@@ -36,6 +36,17 @@ app.post("/postBlog", async (req, res) => {
   }
 });
 
+app.get("/blogs", async (req, res) => {
+  try {
+    const blogs = await Blog.find();
+    res.status(200).json({ message: "Blogs found successfully", blogs });
+  } catch (error) {
+    res
+      .status(500)
+      .json({ message: "An error occured while getting posts", error });
+  }
+});
+
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on PORT ${PORT}`);
