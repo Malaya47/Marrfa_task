@@ -10,6 +10,9 @@ const blogSchema = new mongoose.Schema({
   author: {
     type: String,
   },
+  smallDescription: {
+    type: String,
+  },
   avatarImage: {
     type: String,
   },
@@ -18,6 +21,6 @@ const blogSchema = new mongoose.Schema({
   },
 });
 
-const blog = mongoose.model("blog", blogSchema);
+const Blog = mongoose.model("Blog", blogSchema);
 
-module.exports = blog;
+module.exports = { Blog };
