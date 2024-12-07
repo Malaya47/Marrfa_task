@@ -77,7 +77,7 @@ function App() {
       </section>
 
       {/* blogs section */}
-      <section className="mt-5">
+      <section id="blogs" className="mt-5">
         <Blogs blogsToDisplay={blogsToDisplay} />
       </section>
     </div>

@@ -8,7 +8,7 @@ const Header = () => {
         data-bs-theme="dark"
       >
         <div className="container-fluid container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="#blogs">
             Blogzz
           </a>
           <button
@@ -30,13 +30,9 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
+                <a className="nav-link" href="#blogs">
+                  Blogs
                 </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link">Disabled</a>
               </li>
             </ul>
             {/* <div className="">
