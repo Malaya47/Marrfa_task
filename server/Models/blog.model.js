@@ -16,6 +16,9 @@ const blogSchema = new mongoose.Schema({
   avatarImage: {
     type: String,
   },
+  blogImage: {
+    type: String,
+  },
   date: {
     type: String,
   },
