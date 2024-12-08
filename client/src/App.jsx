@@ -21,7 +21,9 @@ function App() {
   useEffect(() => {
     async function getBlogs() {
       try {
-        const response = await axios.get(`http://localhost:3000/blogs`);
+        const response = await axios.get(
+          `https://blogs-backend-rho.vercel.app/blogs`
+        );
         setBlogs(response.data.blogs);
       } catch (error) {
         console.error(`error occured while getting data ${error}`);
